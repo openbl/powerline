@@ -368,7 +368,7 @@ class WeatherSegment(ThreadedSegment):
 
 		return (temp, icon_names)
 
-	def render(self, weather, icons=None, unit='C', temp_format=None, temp_coldest=-30, temp_hottest=40, **kwargs):
+	def render(self, weather, icons=None, unit='F', temp_format=None, temp_coldest=-30, temp_hottest=40, **kwargs):
 		if not weather:
 			return None
 
